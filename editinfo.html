@@ -1,0 +1,50 @@
+<html>  
+	<head>
+	       <title>TODO</title>
+	</head>
+	<body>
+	
+	    <h2 style="color:red;" align="center"><u>Update Medicine Details</u></h2>
+	    <form  method="POST" action="/update">
+		         <table>
+				 
+				       <tr>
+					        <td>Code:</td>
+							<td><input type="text" name="c" value="{{d.0}}"></td>
+					   </tr>
+				 
+				       <tr>
+					        <td>Medicine Name:</td>
+							<td><input type="text" name="n" value="{{d.1}}"></td>
+					   </tr>
+					   
+					   <tr>
+					        <td>Price:</td>
+							<td><input type="text" name="p" value="{{d.2}}"></td>
+					   </tr>
+					   
+					   <tr>
+					        <td>Stock:</td>
+							<td><input type="text" name="s" value="{{d.3}}"></td>
+					   </tr>
+					   
+					   <tr>
+					        <td>Description:</td>
+							<td><input type="text" name="d" value="{{d.4}}"></td>
+					   </tr>
+					   
+					   <tr>
+					        <td>Date:</td>
+							<td><input type="date" name="dt" value="{{d.5}}"></td>
+					   </tr>
+					   
+					   <tr>
+					        
+							<td><input type="submit" name="send" value="Update"></td>
+							<td><input type="reset" name="send" value="Cancel"></td>
+					   </tr>
+                 </table>
+		 </form>
+    <body>
+	
+<html>

@@ -1,0 +1,41 @@
+<html>
+   <head>
+       <title>Dashboard1</title>
+   </head>
+
+   <body>
+            <h2 style="color:red;" align="center"><u>Medicine Details</u></h2><hr>
+			
+			<a href="/">Add New Task</a><br><br> 
+            <table border="1" align="center">
+			    <tr>
+				     <th>Code</th>
+				     <th>Medicine Name</th>
+					 <th>Price</th>
+					 <th>Stock</th>
+					 <th>Description</th>
+					 <th>Date</th>
+					 <th>Edit</th>
+					 <th>Delete</th>
+					 
+				 </tr>
+				 {% for x in d:%}
+				 
+				 <tr>
+				     <td>{{x.0}}</td>
+				     <td>{{x.1}}</td>
+					 <td>{{x.2}}</td>
+					 <td>{{x.3}}</td>
+					 <td>{{x.4}}</td>
+					 <td>{{x.5}}</td>
+					 <td><a href="/edit/{{x.0}}">Edit</td>
+					 <td><a href="/delete/{{x.0}}">Delete</td>
+					 
+				 </tr>
+				 
+				 {% endfor %}
+			
+             </table>
+   <body>			 
+
+</html>
